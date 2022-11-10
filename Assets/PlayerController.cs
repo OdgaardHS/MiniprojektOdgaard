@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
         //allows the use of sprinting with the shift key, if any stamina is left
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
-            speed = 14f;
+            speed = 30f;
             stamina -= 0.2f * Time.deltaTime;
             isSprinting = true;
             staminaImage.fillAmount -= 0.2f * Time.deltaTime;
